@@ -21,10 +21,13 @@ class PageHandling {
             .on('click', this.hideAll.bind(this))
             .attr('title', LANG.plugins.encryptedpasswords.hideAll)
         ;
+        //ahmet: turn this off, b/c I don't like the copy behavior; esp. on my phone. TODO: add a config+<enrcypt parameter...> to control this.
+        /*
         jQuery('.encryptedpasswords span')
             .on('click', this.copyHandler.bind(this))
             .attr('title', LANG.plugins.encryptedpasswords.copy)
         ;
+        */
     }
 
     /**
